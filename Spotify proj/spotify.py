@@ -2,9 +2,9 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from main import  *
 
-SPOTIPY_CLIENT_ID="6d910e74715d4768a0464011d0d7384c"
+SPOTIPY_CLIENT_ID=""
 
-SPOTIPY_CLIENT_SECRET="f4069d6ff8144224b002dfd73917dee9"
+SPOTIPY_CLIENT_SECRET=""
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
@@ -14,7 +14,7 @@ sp = spotipy.Spotify(
         client_secret=SPOTIPY_CLIENT_SECRET,
         show_dialog=True,
         cache_path="token.txt",
-        username="ilbk124",
+        username="",
     )
 )
 user_id = sp.current_user()["id"]
